@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stepNumber {
+    font-size: 5em;
+    color: wheat;
+    font-weight: 600;
+}
+
+.text{
+    font-size: 2em;
+    color: wheat;
+    text-align: center;
+}
+
+.stepBorder{
+    background-color: #3fa1fd;
+    height: 4px;
+    width: 60%;
+}

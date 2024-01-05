@@ -1,0 +1,21 @@
+.benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(180deg, #1162ac,black);
+    padding-bottom: 100px;
+}
+
+.benefits p{
+    color: wheat;
+    padding-top: 20px;
+    font-size: 1.3em;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 400;
+    color: wheat;
+}

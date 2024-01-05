@@ -1,0 +1,16 @@
+.howWork{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    background: linear-gradient(180deg, black,#1162ac);
+}
+
+.title {
+    font-size: 2.5em;
+    color: wheat;
+    font-weight: 400;
+    text-align: center;
+}
