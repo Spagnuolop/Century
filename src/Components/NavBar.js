@@ -30,19 +30,19 @@ const NavBar = () => {
     const links = [
         {
             id: 1,
-            link: 'Home',
+            link: 'Inicio',
         },
         {
             id: 2,
-            link: 'Services',
+            link: 'Servicios',
         },
         {
             id: 3,
-            link: 'HowWeWork',
+            link: 'ComoTrabajamos',
         },
         {
             id: 4,
-            link: 'Benefits',
+            link: 'Beneficios',
         },
     ]
 
@@ -59,16 +59,17 @@ const NavBar = () => {
             )}
             {navBarOpen && (
                 <ul className={styles.linkContainer}>
-                    {links.map((x) => (
+                    {links.map(({ id, link }) => (
                         <div>
                             <Link
+                                key={id}
                                 onClick={() => setNavBarOpen(false)}
-                                to={x.link}
+                                to={link}
                                 smooth
                                 duration={500}
                                 className={styles.navLink}
                             >
-                                {x.link === 'HowWeWork' ? 'How We Work' : x.link}{' '}
+                                {link === 'ComoTrabajamos' ? 'Como Trabajamos' : link}{' '}
                             </Link>
                             <div className={styles.border}></div>
                         </div>
@@ -77,16 +78,16 @@ const NavBar = () => {
             )}
             {windowDimension.width > 800 && (
                 <ul className={styles.linkContainer}>
-                    {links.map((x) => (
+                    {links.map(({ link, id }) => (
                         <div>
                             <Link
                                 onClick={() => setNavBarOpen(false)}
-                                to={x.link}
+                                to={link}
                                 smooth
                                 duration={500}
                                 className={styles.navLink}
                             >
-                                {x.link === 'HowWeWork' ? 'How We Work' : x.link}
+                                {link === 'ComoTrabajamos' ? 'Como Trabajamos' : link}
                             </Link>
 
                             <div className={styles.border}></div>

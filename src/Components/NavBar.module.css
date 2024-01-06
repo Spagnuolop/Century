@@ -10,10 +10,11 @@
 
 .navOpen {
     display: flex;
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     flex-direction: column;
+    align-items: center;
     background: linear-gradient(180deg, black, #1162ac);
     color: wheat;
 }
@@ -29,19 +30,11 @@
     cursor: pointer;
 }
 
-/* .border {
-    display: flex;
-    height: 1px;
-    animation-name: animacionborder;
-    animation-duration: 1s;
-    background-color: blue;
-} */
-
 @keyframes animacionborder {
-    0%{
+    0% {
         height: 0px;
     }
-    100%{
+    100% {
         height: 1px;
     }
 }
@@ -49,10 +42,11 @@
 .logo {
     display: flex;
     font-weight: 600;
+    color: wheat;
 }
 
 @media (min-width: 800px) {
-    .logo{
+    .logo {
         font-size: 1.5em;
     }
     .navBar {
@@ -71,7 +65,8 @@
         font-weight: 400;
         padding-top: 4px;
         font-size: 1.4em;
-        transition: 0.2s;
+        transition: 0.5s;
+        padding-right: 10px;
     }
     .navLink:hover {
         font-size: 1.5em;
@@ -81,10 +76,8 @@
         align-content: center;
         justify-content: space-around;
         height: 50px;
-        width: 100%;
         color: wheat;
-        }
-        
+    }
 }
 
 .navOnScroll {
@@ -92,7 +85,7 @@
     height: 50px;
     width: 100%;
     position: fixed;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     color: wheat;
 }

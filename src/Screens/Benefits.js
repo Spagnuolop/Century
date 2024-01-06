@@ -10,24 +10,24 @@ import { FiRepeat } from 'react-icons/fi'
 const Benefits = () => {
     return (
         <div name="Benefits" className={styles.benefits}>
-            <h2 className={styles.title}>Benefits of having a professional web</h2>
+            <h2 className={styles.title}>Beneficios de tener un sitio web</h2>
             <p>
-                You open up to the world <BsFillDoorOpenFill />
+                Te abres al mundo <BsFillDoorOpenFill />
             </p>
             <p>
-                New customers <FaPeopleCarry />
+                Nuevos clientes <FaPeopleCarry />
             </p>
             <p>
-                Much lower costs <FaMoneyBillAlt />
+                Costos mucho más bajos <FaMoneyBillAlt />
             </p>
             <p>
-                No schedules <AiOutlineSchedule />
+                Sin horarios <AiOutlineSchedule />
             </p>
             <p>
-                Ultrasegmented marketing <AiOutlineRise />
+                Marketing mejorado <AiOutlineRise />
             </p>
             <p>
-                Automation, more performance <FiRepeat />
+                Automatización y más rendimiento <FiRepeat />
             </p>
         </div>
     )

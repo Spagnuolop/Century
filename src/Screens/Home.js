@@ -7,20 +7,20 @@ const Home = () => {
         <div name="Home" className={styles.home}>
             <div className={styles.titleContainer}>
                 <p>
-                    Expand your <br />
-                    <b>business</b>
+                    Expande tu <br />
+                    <b>Negocio</b>
                 </p>
                 <p>
-                    With the best <br />
-                    <b>online presence</b>
+                    Con la mejor <br />
+                    <b>Presencia online</b>
                 </p>
             </div>
             <div className={styles.buttonsContainer}>
                 <Link to="Contact" smooth duration={500} className={styles.callToAction}>
-                    Get in Touch
+                    Ponerse en Contacto
                 </Link>
                 <Link to="Contact" smooth duration={500} className={styles.callToAction}>
-                    Get a Quote
+                    Obtener Cotización
                 </Link>
             </div>
         </div>

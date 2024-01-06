@@ -4,7 +4,7 @@ import styles from './Services.module.css'
 const Services = () => {
     return (
         <div name="Services" className={styles.services}>
-            <p>We solve your company's problems by creating amazing web pages.</p>
+            <p>Solucionamos los problemas de tu empresa creando increíbles páginas web.</p>
             <img alt="codigo" className={styles.imgContent} src={require('../Assets/codigo.webp')} />
         </div>
     )

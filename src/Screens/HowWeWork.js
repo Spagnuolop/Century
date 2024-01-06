@@ -6,29 +6,29 @@ const HowWeWork = () => {
     const steps = [
         {
             id: 1,
-            text: 'You tell us your proposal.',
+            text: 'Cuéntanos tu propuesta.',
         },
         {
             id: 2,
-            text: 'We design your site and do a review.',
+            text: 'Diseñamos tu sitio y hacemos una revisión.',
         },
         {
             id: 3,
-            text: 'We develop your website.',
+            text: 'Desarrollamos tu sitio web.',
         },
         {
             id: 4,
-            text: 'We deploy your website.',
+            text: 'Implementamos tu sitio web.',
         },
         {
             id: 5,
-            text: 'You enjoy all the benefits of having a website for your company.',
+            text: 'Disfrutas de todos los beneficios de tener un sitio web para tu empresa.',
         },
     ]
 
     return (
         <div name="HowWeWork" className={styles.howWork}>
-            <h2 className={styles.title}>How We Work</h2>
+            <h2 className={styles.title}>Como Trabajamos</h2>
             {steps.map((x, idx) => (
                 <Step text={x.text} step={x.id} key={idx} />
             ))}
