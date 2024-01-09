@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 
 const Home = () => {
     return (
-        <div name="Home" className={styles.home}>
+        <div name="Inicio" className={styles.home}>
             <div className={styles.titleContainer}>
                 <p>
                     Expande tu <br />

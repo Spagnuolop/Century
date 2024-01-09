@@ -11,6 +11,7 @@
 .navOpen {
     display: flex;
     position: fixed;
+    padding-top: 20px;
     height: 100%;
     width: 100%;
     flex-direction: column;
@@ -90,11 +91,18 @@
     color: wheat;
 }
 
-.contactLink {
-    display: flex;
-    font-size: 1.5em;
-    font-weight: 400;
-    background-color: #136bbd;
-    border-radius: 4px;
-    padding: 3px;
+@media (min-width: 800px) and (max-width: 1105px) {
+    .navBar {
+        display: flex;
+        justify-content: left;
+    }
+
+    .navLink {
+        font-weight: 400;
+        padding-top: 4px;
+        font-size: 1.4em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: pre;
+    }
 }

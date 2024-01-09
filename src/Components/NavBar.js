@@ -49,7 +49,7 @@ const NavBar = () => {
     const scrollPosition = useScrollPosition()
     return (
         <div className={navBarOpen ? styles.navOpen : scrollPosition > 0 ? styles.navOnScroll : styles.navBar}>
-            {!navBarOpen && <p className={styles.logo}>CENTURY | Digital Solutions</p>}
+            {!navBarOpen && <p className={styles.logo}>CENTURY | Soluciones Web</p>}
             {!navBarOpen && windowDimension.width < 800 ? (
                 <IoMdMenu onClick={() => setNavBarOpen(!navBarOpen)} size={25} />
             ) : (
@@ -59,17 +59,16 @@ const NavBar = () => {
             )}
             {navBarOpen && (
                 <ul className={styles.linkContainer}>
-                    {links.map(({ id, link }) => (
+                    {links.map((x) => (
                         <div>
                             <Link
-                                key={id}
                                 onClick={() => setNavBarOpen(false)}
-                                to={link}
+                                to={x.link}
                                 smooth
                                 duration={500}
                                 className={styles.navLink}
                             >
-                                {link === 'ComoTrabajamos' ? 'Como Trabajamos' : link}{' '}
+                                {x.link === 'ComoTrabajamos' ? 'Como Trabajamos' : x.link}{' '}
                             </Link>
                             <div className={styles.border}></div>
                         </div>
@@ -78,16 +77,16 @@ const NavBar = () => {
             )}
             {windowDimension.width > 800 && (
                 <ul className={styles.linkContainer}>
-                    {links.map(({ link, id }) => (
+                    {links.map((x) => (
                         <div>
                             <Link
                                 onClick={() => setNavBarOpen(false)}
-                                to={link}
+                                to={x.link}
                                 smooth
                                 duration={500}
                                 className={styles.navLink}
                             >
-                                {link === 'ComoTrabajamos' ? 'Como Trabajamos' : link}
+                                {x.link === 'ComoTrabajamos' ? 'Como Trabajamos' : x.link}
                             </Link>
 
                             <div className={styles.border}></div>
@@ -98,9 +97,9 @@ const NavBar = () => {
                         to="Contact"
                         smooth
                         duration={500}
-                        className={styles.contactLink}
+                        className={styles.navLink}
                     >
-                        Contact
+                        Contacto
                     </Link>
                 </ul>
             )}

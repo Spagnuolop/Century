@@ -1,7 +1,7 @@
 .home {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, black,#1162ac);
+    background: linear-gradient(180deg, black, #1162ac);
     padding: 20px 20px 200px;
     align-items: center;
 }
@@ -18,10 +18,9 @@
 .callToAction {
     background-color: #3fa1fd;
     padding: 10px;
-    margin-left: 20px;
+    margin-top: 30px;
     border-radius: 10px;
     transition: 0.5s;
-
 }
 
 .callToAction:hover {
@@ -30,5 +29,23 @@
 }
 
 .buttonsContainer {
+    display: flex;
+    flex-direction: column;
     padding-top: 40px;
+}
+
+@media (min-width: 800px) {
+    .titleContainer {
+        font-size: 1.8em;
+    }
+
+    .buttonsContainer {
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+    }
+
+    .callToAction {
+        margin-left: 20px;
+    }
 }

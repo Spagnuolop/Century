@@ -27,7 +27,7 @@ const HowWeWork = () => {
     ]
 
     return (
-        <div name="HowWeWork" className={styles.howWork}>
+        <div name="ComoTrabajamos" className={styles.howWork}>
             <h2 className={styles.title}>Como Trabajamos</h2>
             {steps.map((x, idx) => (
                 <Step text={x.text} step={x.id} key={idx} />
