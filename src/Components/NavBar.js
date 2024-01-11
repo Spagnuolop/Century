@@ -21,7 +21,7 @@ const NavBar = () => {
 
     useEffect(() => {
         window.addEventListener('resize', detectDimension)
-        windowDimension.width > 800 && setNavBarOpen(false)
+        windowDimension.width > 900 && setNavBarOpen(false)
         return () => {
             window.removeEventListener('resize', detectDimension)
         }
@@ -50,10 +50,10 @@ const NavBar = () => {
     return (
         <div className={navBarOpen ? styles.navOpen : scrollPosition > 0 ? styles.navOnScroll : styles.navBar}>
             {!navBarOpen && <p className={styles.logo}>CENTURY | Soluciones Web</p>}
-            {!navBarOpen && windowDimension.width < 800 ? (
+            {!navBarOpen && windowDimension.width < 900 ? (
                 <IoMdMenu onClick={() => setNavBarOpen(!navBarOpen)} size={25} />
             ) : (
-                windowDimension.width < 800 && (
+                windowDimension.width < 900 && (
                     <IoMdClose onClick={() => setNavBarOpen(!navBarOpen)} color="#f5deb3" size={25} />
                 )
             )}
@@ -75,7 +75,7 @@ const NavBar = () => {
                     ))}
                 </ul>
             )}
-            {windowDimension.width > 800 && (
+            {windowDimension.width > 900 && (
                 <ul className={styles.linkContainer}>
                     {links.map((x) => (
                         <div>
