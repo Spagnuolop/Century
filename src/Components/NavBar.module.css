@@ -89,6 +89,7 @@
     width: 100%;
     position: fixed;
     justify-content: space-around;
+    background: linear-gradient(black, #1162ac);
     align-items: center;
     color: wheat;
 }
