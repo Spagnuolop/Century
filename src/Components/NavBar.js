@@ -92,15 +92,17 @@ const NavBar = () => {
                             <div className={styles.border}></div>
                         </div>
                     ))}
-                    <Link
-                        onClick={() => setNavBarOpen(false)}
-                        to="Contact"
-                        smooth
-                        duration={500}
-                        className={styles.navLink}
-                    >
-                        Contacto
-                    </Link>
+                    <div>
+                        <Link
+                            onClick={() => setNavBarOpen(false)}
+                            to="Contact"
+                            smooth
+                            duration={500}
+                            className={styles.navLink}
+                        >
+                            Contacto
+                        </Link>
+                    </div>
                 </ul>
             )}
         </div>
