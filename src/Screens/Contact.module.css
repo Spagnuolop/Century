@@ -4,10 +4,10 @@
     padding-bottom: 100px;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, black,#1162ac);
+    background: linear-gradient(180deg, black, #1162ac);
 }
 
-.contact h2{
+.contact h2 {
     color: wheat;
     font-weight: 400;
     font-size: 2.5em;
@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-.form button{
+.form button {
     width: 90px;
     height: 40px;
     border-radius: 4px;
@@ -30,11 +30,11 @@
     background-color: #3fa1fd;
 }
 
-.form button:hover{
+.form button:hover {
     cursor: pointer;
 }
 
-.form label{
+.form label {
     color: wheat;
     margin-top: 5px;
     font-size: 1.3em;
@@ -50,7 +50,7 @@
     height: 25px;
 }
 
-.form textarea{
+.form textarea {
     color: wheat;
     border: 1px solid #1162ac;
     border-radius: 4px;
@@ -60,12 +60,12 @@
     background: none;
 }
 
-@media (min-width: 800px){
-    .input{
+@media (min-width: 900px) {
+    .input {
         width: 50%;
     }
 
-    .form textarea{
+    .form textarea {
         width: 50%;
         height: 50px;
     }
