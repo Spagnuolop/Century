@@ -49,7 +49,7 @@ const NavBar = () => {
     const scrollPosition = useScrollPosition()
     return (
         <div className={navBarOpen ? styles.navOpen : scrollPosition > 0 ? styles.navOnScroll : styles.navBar}>
-            {!navBarOpen && <p className={styles.logo}>CENTURY | Soluciones Web</p>}
+            {!navBarOpen && <p className={styles.logo}>IMPROVEON | Soluciones Web</p>}
             {!navBarOpen && windowDimension.width < 900 ? (
                 <IoMdMenu onClick={() => setNavBarOpen(!navBarOpen)} size={25} />
             ) : (
