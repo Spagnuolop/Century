@@ -4,11 +4,11 @@
     padding-bottom: 100px;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, black, #1162ac);
+    font-family: 'Montserrat';
 }
 
 .contact h2 {
-    color: wheat;
+    color: #171717;
     font-weight: 400;
     font-size: 2.5em;
 }
@@ -27,7 +27,7 @@
     border: none;
     font-size: 1em;
     margin-top: 10px;
-    background-color: #3fa1fd;
+    font-family: 'Montserrat';
 }
 
 .form button:hover {
@@ -35,15 +35,15 @@
 }
 
 .form label {
-    color: wheat;
+    color: #171717;
     margin-top: 5px;
     font-size: 1.3em;
 }
 
 .input {
     width: 90%;
-    color: wheat;
-    border: 1px solid #1162ac;
+    color: #171717;
+    border: 2px solid #171717;
     border-radius: 4px;
     margin-top: 15px;
     background: none;
@@ -51,8 +51,8 @@
 }
 
 .form textarea {
-    color: wheat;
-    border: 1px solid #1162ac;
+    color: #171717;
+    border: 2px solid #171717;
     border-radius: 4px;
     resize: none;
     width: 90%;

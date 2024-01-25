@@ -5,7 +5,10 @@
     position: absolute;
     justify-content: space-around;
     align-items: center;
-    color: wheat;
+    color: #f1f1f1;
+    padding-top: 25px;
+    font-family: 'Montserrat';
+    z-index: 99;
 }
 
 .navOpen {
@@ -17,7 +20,8 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient(180deg, black, #1162ac);
-    color: wheat;
+    color: #f1f1f1;
+    font-family: 'Montserrat';
 }
 
 .navLink {
@@ -43,7 +47,7 @@
 .logo {
     display: flex;
     font-weight: 600;
-    color: wheat;
+    color: #f1f1f1;
     white-space: nowrap;
 }
 
@@ -66,20 +70,35 @@
     .navLink {
         font-weight: 400;
         padding-top: 4px;
+        padding-bottom: 4px;
         font-size: 1.4em;
-        transition: 0.5s;
-        padding-right: 10px;
+        position: relative;
     }
-    .navLink:hover {
-        font-size: 1.5em;
+    .navLink::before {
+        content: '';
+        background: #f1f1f1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 100%;
+        height: 3px;
+        transition: 0.5s ease-out;
     }
+
+    .navLink:hover::before {
+        right: 0;
+    }
+
     .navOnScroll {
         align-items: center;
         align-content: center;
         justify-content: space-around;
-        background: linear-gradient(black, #1162ac);
+        padding-top: 25px;
         height: 50px;
-        color: wheat;
+        font-family: 'Montserrat';
+        color: #f1f1f1;
+        z-index: 99;
+        background-color: #171717;
     }
 }
 
@@ -89,9 +108,8 @@
     width: 100%;
     position: fixed;
     justify-content: space-around;
-    background: linear-gradient(black, #1162ac);
     align-items: center;
-    color: wheat;
+    color: #f1f1f1;
 }
 
 @media (min-width: 900px) and (max-width: 1105px) {

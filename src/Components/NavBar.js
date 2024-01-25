@@ -76,34 +76,51 @@ const NavBar = () => {
                 </ul>
             )}
             {windowDimension.width > 900 && (
-                <ul className={styles.linkContainer}>
-                    {links.map((x) => (
-                        <div>
-                            <Link
-                                onClick={() => setNavBarOpen(false)}
-                                to={x.link}
-                                smooth
-                                duration={500}
-                                className={styles.navLink}
-                            >
-                                {x.link === 'ComoTrabajamos' ? 'Como Trabajamos' : x.link}
-                            </Link>
+                <div className={styles.linkContainer}>
+                    <Link onClick={() => setNavBarOpen(false)} to="Inicio" className={styles.navLink}>
+                        Inicio
+                    </Link>
 
-                            <div className={styles.border}></div>
-                        </div>
-                    ))}
-                    <div>
-                        <Link
-                            onClick={() => setNavBarOpen(false)}
-                            to="Contact"
-                            smooth
-                            duration={500}
-                            className={styles.navLink}
-                        >
-                            Contacto
-                        </Link>
-                    </div>
-                </ul>
+                    <Link
+                        onClick={() => setNavBarOpen(false)}
+                        to="Servicios"
+                        smooth
+                        duration={500}
+                        className={styles.navLink}
+                    >
+                        Servicios
+                    </Link>
+
+                    <Link
+                        onClick={() => setNavBarOpen(false)}
+                        to="ComoTrabajamos"
+                        smooth
+                        duration={500}
+                        className={styles.navLink}
+                    >
+                        Como Trabajamos
+                    </Link>
+
+                    <Link
+                        onClick={() => setNavBarOpen(false)}
+                        to="Beneficios"
+                        smooth
+                        duration={500}
+                        className={styles.navLink}
+                    >
+                        Beneficios
+                    </Link>
+
+                    <Link
+                        onClick={() => setNavBarOpen(false)}
+                        to="Contact"
+                        smooth
+                        duration={500}
+                        className={styles.navLink}
+                    >
+                        Contacto
+                    </Link>
+                </div>
             )}
         </div>
     )
